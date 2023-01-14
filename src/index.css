@@ -1,13 +1,463 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: arial, helvetica;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section {
+  height: 100vh;
+}
+
+.section3 {
+  height: 100vh;
+}
+
+.fp-watermark {
+
+  display: none !important;
+
+}
+
+.fp-watermark>a {
+
+  display: none !important;
+
+}
+
+/*TEAM */
+
+column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+}
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+  }
+
+  .card-team {
+    min-width: 300px;
+
+    width: 90%;
+    /* adjust the width to fit the screen */
+    height: auto;
+    /* adjust the height to fit the screen */
+    box-sizing: border-box;
+
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .column {
+    width: 100%;
+  }
+
+  .card-team {
+    min-width: 300px;
+
+    width: 100%;
+    /* adjust the width to fit the screen */
+    height: auto;
+    /* adjust the height to fit the screen */
+    box-sizing: border-box;
+
+  }
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  padding-top: 30vh;
+  align-items: center;
+  padding-left: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card-team {
+  text-align: center;
+  background-color: white;
+  padding: 16px;
+  transition: transform 200ms ease-in;
+  height: 45vh;
+  /* changed to auto */
+  position: relative;
+  border-radius: 25px;
+  /* only set one value for border-radius */
+  border: 1px solid #000000;
+  /* changed from 0px solid #000000; */
+  display: block;
+  margin: 0 auto;
+  /* align horizontal to center */
+  box-sizing: border-box;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+  .card-team {
+    width: 90%;
+    /* adjust the width to fit the screen */
+    height: auto;
+    /* adjust the height to fit the screen */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .card-team {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    min-width: 300p;
+
+  }
+}
+
+.team-wrapper {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.image-container img {
+  clip-path: circle();
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  height: auto;
+}
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+  .image-container img {
+    width: 80%;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .image-container img {
+    width: 50%;
+  }
+}
+
+.p {
+  color: black;
+}
+
+.h2 {
+  color: black;
+}
+
+.card-team:hover {
+  transform: scale(2);
+  z-index: 1;
+}
+
+.card-team:hover .connections {
+  /* use the hover pseudo class to change the display property */
+  display: flex;
+}
+
+.connections {
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.connection {
+  margin: 0 10px;
+  transition: transform 200ms ease-in;
+}
+
+.github:hover {
+  transform: scale(1.2);
+}
+
+.linkedin:hover {
+  transform: scale(1.2);
+}
+
+.a-github {
+  color: black;
+}
+
+.a-linkedin {
+  color: black;
+}
+
+.text {
+  margin-top: 70px;
+  text-align: left;
+  width: 80%;
+}
+
+/*fade animation */
+.fade-left {
+  -webkit-animation: fade-left 2.2s both;
+  /* Safari 4+ */
+  -moz-animation: fade-left 2.2s both;
+  /* Fx 5+ */
+  -o-animation: fade-left 2.2s both;
+  /* Opera 12+ */
+  animation: fade-left 2.2s both;
+  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fade-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+/* Fx 5+ */
+@-moz-keyframes fade-left {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+/* Opera 12+ */
+@-o-keyframes fade-left {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+/* IE 10+, Fx 29+ */
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-top {
+  -webkit-animation: fade-top 2.2s both;
+  /* Safari 4+ */
+  -moz-animation: fade-top 2.2s both;
+  /* Fx 5+ */
+  -o-animation: fade-top 2.2s both;
+  /* Opera 12+ */
+  animation: fade-top 2.2s both;
+  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fade-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fade-top {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fade-top {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fade-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-right {
+  -webkit-animation: fade-right 2.2s both;
+  /* Safari 4+ */
+  -moz-animation: fade-right 2.2s both;
+  /* Fx 5+ */
+  -o-animation: fade-right 2.2s both;
+  /* Opera 12+ */
+  animation: fade-right 2.2s both;
+  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fade-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fade-right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fade-right {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-bottom {
+  -webkit-animation: fade-bottom 2.2s both;
+  /* Safari 4+ */
+  -moz-animation: fade-bottom 2.2s both;
+  /* Fx 5+ */
+  -o-animation: fade-bottom 2.2s both;
+  /* Opera 12+ */
+  animation: fade-bottom 2.2s both;
+  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+/* Fx 5+ */
+@-moz-keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0%);
+  }
+}
+
+/* Opera 12+ */
+@-o-keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+/* IE 10+, Fx 29+ */
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
