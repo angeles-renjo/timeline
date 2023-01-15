@@ -2,9 +2,6 @@
 import React from "react";
 import { RiHome2Fill } from 'react-icons/ri'
 import { RiTeamFill } from 'react-icons/ri'
-import { MdOutlineDocumentScanner } from 'react-icons/md'
-
-
 
 const NavBar = () => {
     return (
