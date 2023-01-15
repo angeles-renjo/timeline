@@ -9,6 +9,8 @@ const LogBook = () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("fade-left");
+                } else {
+                    entry.target.classList.remove("fade-left");
                 }
             });
         });
@@ -18,7 +20,9 @@ const LogBook = () => {
 
         // Clean up function to disconnect the observer when the component unmounts
         return () => observer.disconnect();
+
     }, []);
+
     return (
         <div className='section' data-anchor='page4'>
             <div className='logbook-title'>Log Books</div>

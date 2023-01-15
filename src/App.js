@@ -5,6 +5,7 @@ import Second from "./components/Second";
 import Team from "./components/Team";
 import NavBar from "./components/NavBar";
 import LogBook from "./components/LogBooks";
+import Home from "./components/Home"
 
 const App = () => (
   <div>
@@ -20,7 +21,7 @@ const App = () => (
 
         return (
           <div>
-            <div className="section" data-anchor="page1"><h3>FINNAPPSTER DELTAV2<br /> PORTFOLIO</h3></div>
+            <Home />
             <Second />
             <Team />
             <LogBook />

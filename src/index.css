@@ -27,6 +27,28 @@ h3 {
 }
 
 
+/*Home*/
+.section h3 {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  60% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 /*NavBar */
 
 
@@ -530,7 +552,7 @@ h3 {
   display: flex;
   align-items: center;
   margin-bottom: 80px;
-  padding-right:40px;
+  padding-right: 40px;
 }
 
 .logbook-icon {
@@ -539,7 +561,8 @@ h3 {
 
 .logbook-name {
   display: inline-block;
-  white-space: nowrap; /* prevent text from wrapping to the next line */
+  white-space: nowrap;
+  /* prevent text from wrapping to the next line */
   margin-left: 150px;
   font-size: 50px;
   color: white;
