@@ -27,19 +27,27 @@ const LogBook = () => {
                 <div className='fade-left'>
                     <div className='logbook-contents'>
                         <div className='logbook-row'>
-                            <div className='logbook-icon'><BsFileEarmarkWord size={150} /></div>
+                            <a className='logbook-icon' href="https://github.com">
+                                <BsFileEarmarkWord size={150} />
+                            </a>
                             <div className='logbook-name'>Peter An</div>
                         </div>
                         <div className='logbook-row' >
-                            <div className='logbook-icon'><BsFileEarmarkWord size={150} /></div>
+                            <a className='logbook-icon' href="https://github.com">
+                                <BsFileEarmarkWord size={150} />
+                            </a>
                             <div className='logbook-name'>Jameson Yeo</div>
                         </div>
                         <div className='logbook-row' >
-                            <div className='logbook-icon'><BsFileEarmarkWord size={150} /></div>
+                            <a className='logbook-icon' href="https://github.com">
+                                <BsFileEarmarkWord size={150} />
+                            </a>
                             <div className='logbook-name'>Christopher Li</div>
                         </div>
                         <div className='logbook-row'>
-                            <div className='logbook-icon'><BsFileEarmarkWord size={150} /></div>
+                            <a className='logbook-icon' href="https://github.com">
+                                <BsFileEarmarkWord size={150} />
+                            </a>
                             <div className='logbook-name'>Renjo Angeles</div>
                         </div>
                     </div>
