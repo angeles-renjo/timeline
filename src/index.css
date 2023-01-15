@@ -43,7 +43,7 @@ h3 {
   text-decoration: none;
   font-weight: 450;
   font-size: 35px;
-  
+
 }
 
 
@@ -122,7 +122,8 @@ h3 {
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
-  padding-top: 30vh;
+  padding-top: 25vh;
+  align-content: center;
   align-items: center;
   align-items: center;
   display: flex;
@@ -510,4 +511,37 @@ h3 {
   right: 0;
   color: white;
   padding-top: 70px;
+}
+
+.logbook-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.logbook-row {
+  width: 400px;
+  /* fix the width of the element */
+  height: 200px;
+  /* fix the height of the element */
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  padding-right:40px;
+}
+
+.logbook-icon {
+  left: 0;
+}
+
+.logbook-name {
+  display: inline-block;
+  white-space: nowrap; /* prevent text from wrapping to the next line */
+  margin-left: 150px;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
 }
