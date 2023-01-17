@@ -70,21 +70,22 @@ const Meetings = () => {
 
   }, []);
   return (
-    <div className='section' data-anchor='page5' >
-      <h1 className='meeting-title'>Meetings Minutes
-      <a className ='meeting-link' href = "https://www.google.com/drive/">click here for documents</a>
-      </h1>
-      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" ref={trackRef}>
-        <img class="image" src="./image/meeting/1.jpg" draggable="false"  alt="1" />
-        <img class="image" src="./image/meeting/2.jpg" draggable="false"  alt="2"/>
-        <img class="image" src="./image/meeting/3.jpg" draggable="false"  alt="3"/>
-        <img class="image" src="./image/meeting/4.jpg" draggable="false"  alt="4"/>
-        <img class="image" src="./image/meeting/5.jpg" draggable="false"  alt="5"/>
-        <img class="image" src="./image/meeting/6.jpg" draggable="false"  alt="6"/>
-        <img class="image" src="./image/meeting/7.jpg" draggable="false"  alt="7"/>
+    <div className='section' data-anchor='page4' >
+
+        <h1 className='meeting-title'>Meetings Minutes
+        </h1>
+        <a className='meeting-link' href="https://www.google.com/drive/">click here for documents</a>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" ref={trackRef}>
+          <img className="image" src="./image/meetings/1.jpg" draggable="false" alt="1" />
+          <img className="image" src="./image/meetings/2.jpg" draggable="false" alt="2" />
+          <img className="image" src="./image/meetings/3.jpg" draggable="false" alt="3" />
+          <img className="image" src="./image/meetings/4.jpg" draggable="false" alt="4" />
+          <img className="image" src="./image/meetings/5.jpg" draggable="false" alt="5" />
+          <img className="image" src="./image/meetings/6.jpg" draggable="false" alt="6" />
+          <img className="image" src="./image/meetings/7.jpg" draggable="false" alt="7" />
+
 
       </div>
-
     </div>
   )
 }

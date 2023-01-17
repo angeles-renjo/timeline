@@ -24,7 +24,7 @@ const LogBook = () => {
     }, []);
 
     return (
-        <div className='section' data-anchor='page4'>
+        <div className='section' data-anchor='page3'>
             <div className='logbook-title'>Log Books</div>
             <div className='logbook-wrapper'>
 
