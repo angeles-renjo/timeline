@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { useEffect } from "react";
 
 
-const Team = () => {
+const Third = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -27,7 +27,7 @@ const Team = () => {
 
   }, []);
   return (
-    <div className='section' data-anchor='page2'>
+    <div className='section' data-anchor='page3'>
       <div className='team-wrapper'>
         <div className="row">
 
@@ -146,4 +146,4 @@ const Team = () => {
   )
 }
 
-export default Team;
+export default Third;

@@ -13,11 +13,11 @@ const NavBar = () => {
             </span>
             
             <span className='navbar-icons'>
-                <a href='#page2'><RiTeamFill /></a><span className='navbar-divider'>|</span>
+                <a href='#page3'><RiTeamFill /></a><span className='navbar-divider'>|</span>
             </span>
                 
             <span className='navbar-icons'>
-                <a href='#page3'><GiNotebook /></a>
+                <a href='#page4'><GiNotebook /></a>
             </span>
         </nav>
     );

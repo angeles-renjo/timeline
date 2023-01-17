@@ -20,11 +20,13 @@ const LogBook = () => {
 
         // Clean up function to disconnect the observer when the component unmounts
         return () => observer.disconnect();
+
     }, []);
 
     return (
-        <div className='section' data-anchor='page3'>
+        <div className='section' data-anchor='page4'>
             <div className='logbook-title'>Log Books</div>
+            <div className='logbook-wrapper'>
 
                 <div className='fade-left'>
                     <div className='logbook-contents'>
@@ -54,6 +56,7 @@ const LogBook = () => {
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     )
 
