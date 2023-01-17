@@ -105,7 +105,7 @@ h3 {
 .column:hover {
   transform: scale(1.3);
   transform-origin: center;
-  
+
 }
 
 
@@ -126,10 +126,10 @@ h3 {
   }
 }
 
-.card-team:hover{
-  box-shadow: -5px -1px 61px 10px rgba(255,255,255,0.8);
-  -webkit-box-shadow: -5px -1px 61px 10px rgba(255,255,255,0.8);
-  -moz-box-shadow: -5px -1px 61px 10px rgba(255,255,255,0.8);
+.card-team:hover {
+  box-shadow: -5px -1px 61px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -5px -1px 61px 10px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: -5px -1px 61px 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Small screens */
@@ -184,7 +184,7 @@ h3 {
   min-width: 400px;
   max-width: 400px;
   margin-right: 100px;
- 
+
 }
 
 /* Medium screens */
@@ -563,7 +563,7 @@ h3 {
   padding-right: 40px;
 }
 
-.logbook-icon:hover{
+.logbook-icon:hover {
   transform: scale(1.2);
   transition: all .4s ease;
 }
@@ -594,17 +594,7 @@ h3 {
 
 }
 
-.meeting-link {
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 170px;
-  left: 0;
-  right: 0;
-  color: white;
-}
+
 
 #image-track {
   display: flex;
@@ -687,4 +677,55 @@ body.menu-toggled>.meta-link>span {
   color: white;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+}
+
+
+/*link to meetings*/
+
+.meeting-link {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  bottom: 170px;
+  left: 0;
+  right: 0;
+}
+/* .meeting-link {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 170px;
+  left: 0;
+  right: 0;
+  color: white;
+} */
+
+.meeting-link::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+
+  /* Invert color of black svg icon for dark backgrounds.   */
+
+  filter: invert(1);
+
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+
+.meeting-link:hover {
+  color: red;
 }
