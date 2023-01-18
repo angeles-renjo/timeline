@@ -39,7 +39,7 @@ const Third = () => {
                 <div className="image-container">
                   <img src="./image/peter.jpg" alt="" height="100px" width="100px" />
                 </div><h2>Peter An</h2>
-                <p className='title'>About Me</p>
+                <p className='about-me'>About Me</p>
                 <div className='text'>
                   <p>I am a web developer with experience in both front-end and back-end development.
                     I am passionate about building dynamic and user-friendly websites, and am always looking
@@ -66,7 +66,7 @@ const Third = () => {
                   <img src="./image/jameson.jpg" alt="" height="100px" width="100px" />
                 </div>
                 <h2>Jameson Yeo</h2>
-                <p className='title'>About Me</p>
+                <p className='about-me'>About Me</p>
                 <div className='text'>
                   <p>I am a web developer with experience in both front-end and back-end development.
                     I am passionate about building dynamic and user-friendly websites, and am always looking
@@ -93,7 +93,7 @@ const Third = () => {
                   <img src="./image/chris.jpg" alt="" height="100px" width="100px" />
                 </div>
                 <h2>Christopher Li</h2>
-                <p className='title'>About Me</p>
+                <p className='about-me'>About Me</p>
                 <div className='text'>
                   <p>I am a web developer with experience in both front-end and back-end development.
                     I am passionate about building dynamic and user-friendly websites, and am always looking
@@ -120,7 +120,7 @@ const Third = () => {
                   <img src="./image/renjo.jpg" alt="" height="100px" width="100px" />
                 </div>
                 <h2>Renjo Angeles</h2>
-                <p className='title'>About Me</p>
+                <p className='about-me'>About Me</p>
                 <div className='text'>
                   <p>I am a web developer with experience in both front-end and back-end development.
                     I am passionate about building dynamic and user-friendly websites, and am always looking

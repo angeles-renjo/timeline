@@ -6,13 +6,21 @@ import NavBar from "./components/NavBar";
 import LogBook from "./components/LogBooks";
 import Home from "./components/Home"
 import Meetings from "./components/Meetings";
+import Poster from "./components/Poster"
+import ProjectProposal from "./components/ProjectProposal"
+import MidProject from "./components/MidProject"
+import ClientFeedBack  from "./components/ClientFeedBack"
+import Documents from "./components/Documents"
+
+
+
 
 const App = () => (
   <div>
     <NavBar />
     <ReactFullpage
       navigation={true}
-      sectionsColor={["#00ffff", "black", "#0798ec", "gray"]}
+      sectionsColor={["aqua", "#093640", "#3dabc2", "#29d6b7", "#2cc2d3","#2cc2d3","#2cc2d3","#2cc2d3","#2cc2d3"]}
       onLeave={(origin, destination, direction) => {
         console.log("onLeave event", { origin, destination, direction });
       }}
@@ -25,6 +33,12 @@ const App = () => (
             <Team />
             <LogBook />
             <Meetings />
+            <Poster />
+            <ProjectProposal />
+            <MidProject />
+            <ClientFeedBack />
+            <Documents />
+
 
           </div>
         );
