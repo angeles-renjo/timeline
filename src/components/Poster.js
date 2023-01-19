@@ -4,7 +4,7 @@ function Poster() {
     return (
     <div className='section' data-anchor ='page5'>
 
-        <div className='poster-title'>Poster</div>
+        <div className='title'>Poster</div>
         </div>
     )
 }
