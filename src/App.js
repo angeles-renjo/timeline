@@ -10,18 +10,22 @@ import ProjectProposal from "./components/ProjectProposal"
 import MidProject from "./components/MidProject"
 import ClientFeedBack from "./components/ClientFeedBack"
 import Documents from "./components/Documents"
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 
 
 
 
 const App = () => (
+  <BrowserRouter>
     <div>
-      <NavBar />
+      <Navbar />
       <ReactFullpage
         navigation={true}
-        sectionsColor={["aqua", "#093640", "#3dabc2", "#29d6b7", "#2cc2d3", "#2cc2d3", "#2cc2d3", "#2cc2d3", "#2cc2d3"]}
+        sectionsColor={["aqua", "#0FC2C0", "#3dabc2", "#29d6b7", "#2cc2d3", "#2cc2d3", "#2cc2d3", "#2cc2d3", "#2cc2d3"]}
+        navigationTooltips={['Home', 'The Team', 'LogBooks', 'MeetingMinutes', 'Poster', 'ProjectProposal', 'MidProjectProposal', 'ClientFeedBack', 'Other Documents']}
+        showActiveTooltip={true}
         onLeave={(origin, destination, direction) => {
           console.log("onLeave event", { origin, destination, direction });
         }}
@@ -46,5 +50,6 @@ const App = () => (
         }}
       />
     </div>
+  </BrowserRouter>
 );
 export default App;

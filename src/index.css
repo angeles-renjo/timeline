@@ -59,13 +59,17 @@ h3 {
   }
 }
 
+.a {
+  color: black;
+  font-size: 40px;
+}
 
 
 /*NavBar */
 
 
 .navbar {
-  width: 100%;
+  width: 25%;
   height: 75px;
   position: fixed;
   top: 0;
@@ -77,59 +81,35 @@ h3 {
   text-decoration: none;
   font-weight: 450;
   font-size: 35px;
-
+  left: 50%;
+  /* center the menu horizontally */
+  transform: translateX(-50%);
+  /* center the menu horizontally */
 }
 
-
-
-@media (max-width: 768px) {
-  .navbar {
-    height: 60px;
-    /* reduce the height of the navbar */
-  }
-}
-
-/* Styles for screens smaller than 480px */
-@media (max-width: 480px) {
-  .navbar {
-    height: 40px;
-    /* further reduce the height of the navbar */
-  }
-}
-
-.navbar-divider {
-  color: #D9D9D9;
-  /* set the color of the divider */
-  padding: 0 10px;
-  /* add some padding around the divider */
-}
-
-.navbar-icons{
+.navbar-icons {
   size: 200px;
-}
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
 
-.navbar-icons:hover {
+.navbar-icons a.active {
   transform: scale(1.5);
-  transform-origin: initial;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
 }
 
-.navbar-icons a:hover {
-  color: #000000;
-  /* set the color of the icons to black */
-}
-
-.navbar-icons a:hover,
-.navbar-icons a:active {
-  color: #000000;
-  /* set the color of the icons to black when hovered or active */
-
-
-}
 
 .navbar-icons a:visited {
   color: #000000 !important;
   /* set the color of the icons to black even when visited */
 }
+
+
+
 
 
 /*TEAM */
@@ -772,5 +752,3 @@ body.menu-toggled>.meta-link>span {
   color: white;
   margin-top: 100px;
 }
-
-
