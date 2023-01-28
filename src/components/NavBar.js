@@ -12,7 +12,10 @@ const Navbar = () => {
     const [activeIcon, setActiveIcon] = useState(null);
 
     useEffect(() => {
+        // Get all the navbar icons
         const icons = document.querySelectorAll('.navbar-icons a');
+
+        // Check if the current URL includes the href of any of the icons
         icons.forEach((icon, index) => {
             if (window.location.href.includes(icon.href)) {
                 setActiveIcon(index);
@@ -36,10 +39,8 @@ const Navbar = () => {
 
 
             <div className='navbar-icons'>
-                <a href='#page1'  onClick={() => setActiveIcon(0)}><RiHome2Fill /></a>
+                <a href='#page1' onClick={() => setActiveIcon(0)}><RiHome2Fill /></a>
             </div>
-
-
 
             <div className='navbar-icons'>
                 <a href='#page2' onClick={() => setActiveIcon(1)}><RiTeamFill /></a>
@@ -72,7 +73,7 @@ const Navbar = () => {
             <div className='navbar-icons'>
                 <a href='#page9' onClick={() => setActiveIcon(8)}><RiMoreFill /></a>
             </div>
-            
+
         </nav>
     );
 };

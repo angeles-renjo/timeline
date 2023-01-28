@@ -1,3 +1,18 @@
+@font-face{
+  font-family: proximaBold;
+  src:url(../public/assets/fonts/Fontspring-DEMO-proximanova-black.otf)
+}
+
+@font-face{
+  font-family: proximaRegular;
+  src:url(../public/assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf)
+}
+
+@font-face{
+  font-family: proximaLight;
+  src:url(../public/assets/fonts/Fontspring-DEMO-proximanovacond-light.otf)
+}
+
 body {
   font-family: arial, helvetica;
 }
@@ -7,6 +22,21 @@ h3 {
   text-align: center;
   color: #fff;
   font-weight: 700;
+  font-family: 'proximaBold', sans-serif;
+}
+
+h4{
+  font-family: proximaBold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color:white;
+}
+
+h1{
+  font-family: 'proximaBold' 
 }
 
 .section {
@@ -26,6 +56,12 @@ h3 {
 
 }
 
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+  background: white;
+}
+
+
 .title {
   position: absolute;
   top: 0;
@@ -36,6 +72,7 @@ h3 {
   font-size: 100px;
   color: white;
   margin-top: 100px;
+  font-family: proximaBold;
 }
 
 /*Home*/
@@ -104,7 +141,7 @@ h3 {
 
 
 .navbar-icons a:visited {
-  color: #000000 !important;
+  color: pink !important;
   /* set the color of the icons to black even when visited */
 }
 
@@ -560,6 +597,7 @@ h3 {
   right: 0;
   color: white;
   padding-top: 70px;
+  font-family: proximaBold;
 }
 
 .logbook-contents {
@@ -599,20 +637,21 @@ h3 {
 
 /*Meetings*/
 
-.meeting-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 50px;
-  z-index: 1;
-  font-size: 70px;
+.meeting-title{
   color: white;
-  padding-bottom: 100px;
-
+  top:40%;
+  font-size: 5vw;
+  top:30vh;
+  text-align: left;
+  margin-left: 200px;
 }
 
+.meeting-link{
+  font-size: 1vw;
+  font-style: italic;
+  color:white;
+  font-family: proximaLight;
+}
 
 
 #image-track {
@@ -623,6 +662,8 @@ h3 {
   top: 50%;
   transform: translate(0%, -50%);
   user-select: none;
+  overflow: hidden;
+  background-color: black;
   /* -- Prevent image highlighting -- */
 }
 
@@ -699,45 +740,8 @@ body.menu-toggled>.meta-link>span {
 }
 
 
-/*link to meetings*/
-
-.meeting-link {
-  font-size: 40px;
-  letter-spacing: 2px;
-  color: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  display: flex;
-  bottom: 170px;
-  left: 0;
-  right: 0;
-}
 
 
-.meeting-link::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  margin-left: 15px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-
-  /* Invert color of black svg icon for dark backgrounds.   */
-
-  filter: invert(1);
-
-
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-}
-
-
-.meeting-link:hover {
-  color: blue;
-}
 
 /*Poster*/
 
