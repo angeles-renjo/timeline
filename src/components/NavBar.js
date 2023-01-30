@@ -1,74 +1,77 @@
-import { useEffect, useState } from 'react';
+import React from "react";
 import { RiHome2Fill, RiTeamFill, RiFeedbackFill, RiMoreFill } from 'react-icons/ri'
 import { GiNotebook } from 'react-icons/gi'
 import { MdMeetingRoom, } from 'react-icons/md'
 import { BsFilePost } from 'react-icons/bs'
 import { HiDocumentCheck } from 'react-icons/hi2'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
+import { useState, useEffect } from 'react';
+
 
 const Navbar = () => {
-    const [currentAnchor, setCurrentAnchor] = useState('');
+    const [activeIcon, setActiveIcon] = useState(null);
 
     useEffect(() => {
-        const handleAnchorChange = () => {
-            setCurrentAnchor(window.location.hash.slice(1));
-        };
-        window.addEventListener('hashchange', handleAnchorChange);
-        return () => window.removeEventListener('hashchange', handleAnchorChange);
+        // Get all the navbar icons
+        const icons = document.querySelectorAll('.navbar-icons a');
+
+        // Check if the current URL includes the href of any of the icons
+        icons.forEach((icon, index) => {
+            if (window.location.href.includes(icon.href)) {
+                setActiveIcon(index);
+            }
+        });
     }, []);
+
+    useEffect(() => {
+        const icons = document.querySelectorAll('.navbar-icons a');
+        icons.forEach((icon, index) => {
+            if (index === activeIcon) {
+                icon.classList.add('active');
+            } else {
+                icon.classList.remove('active');
+            }
+        });
+    }, [activeIcon]);
 
     return (
         <nav className="navbar">
-            <div className={`navbar-icons ${currentAnchor === 'page1' ? 'active' : ''}`} id="#page1">
-                <a href="#page1">
-                    <RiHome2Fill />
-                </a>
-            </div>
-            <div className={`navbar-icons ${currentAnchor === 'page2' ? 'active' : ''}`} id="#page2">
-                <a href="#page2">
-                    <RiTeamFill />
-                </a>
-            </div>
-            <div className={`navbar-icons ${currentAnchor === 'page3' ? 'active' : ''}`} id="#page3">
-                <a href="#page3">
-                    <GiNotebook />
-                </a>
+
+
+            <div className='navbar-icons'>
+                <a href='#page1' onClick={() => setActiveIcon(0)}><RiHome2Fill /></a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page4' ? 'active' : ''}`} id="#page4">
-                <a href="#page4">
-                    <MdMeetingRoom />
-                </a>
+            <div className='navbar-icons'>
+                <a href='#page2' onClick={() => setActiveIcon(1)}><RiTeamFill /></a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page5' ? 'active' : ''}`} id="#page5">
-                <a href="#page5">
-                    <BsFilePost />
-                </a>
+            <div className='navbar-icons'>
+                <a href='#page3' onClick={() => setActiveIcon(2)}><GiNotebook /></a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page6' ? 'active' : ''}`} id="#page6">
-                <a href="#page6">
-                    <HiDocumentCheck />
-                </a>
+            <div className='navbar-icons'>
+                <a href='#page4' onClick={() => setActiveIcon(3)}><MdMeetingRoom /></a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page7' ? 'active' : ''}`} id="#page7">
-                <a href="#page7">
-                    <AiOutlineFundProjectionScreen />
-                </a>
+            <div className='navbar-icons'>
+                <a href='#page5' onClick={() => setActiveIcon(4)}><BsFilePost /></a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page8' ? 'active' : ''}`} id="#page8">
-                <a href="#page8">
-                    <RiFeedbackFill />
-                </a>
+            <div className='navbar-icons'>
+                <a href='#page6' onClick={() => setActiveIcon(5)}><HiDocumentCheck /></a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page9' ? 'active' : ''}`} id="#page9">
-                <a href="#page9">
-                    <RiMoreFill />
-                </a>
+            <div className='navbar-icons'>
+                <a href='#page7' onClick={() => setActiveIcon(6)}><AiOutlineFundProjectionScreen /></a>
+            </div>
+
+            <div className='navbar-icons'>
+                <a href='#page8' onClick={() => setActiveIcon(7)}><RiFeedbackFill /></a>
+            </div>
+
+            <div className='navbar-icons'>
+                <a href='#page9' onClick={() => setActiveIcon(8)}><RiMoreFill /></a>
             </div>
 
         </nav>
