@@ -45,10 +45,10 @@ const Third = () => {
                 </div>
                 <div className='connections'>
                   <a className="a-github" href="https://github.com/">
-                    <AiFillGithub className='connection github' size="4rem"></AiFillGithub>
+                    <AiFillGithub className='connection github' size={50}></AiFillGithub>
                   </a>
                   <a className="a-linkedin" href="https://nz.linkedin.com/">
-                    <AiFillLinkedin className='connection linkedin' size="4rem"></AiFillLinkedin>
+                    <AiFillLinkedin className='connection linkedin' size= {50}></AiFillLinkedin>
                   </a>
                 </div>
               </div>
@@ -68,10 +68,10 @@ const Third = () => {
                 </div>
                 <div className='connections'>
                   <a className="a-github" href="https://github.com/">
-                    <AiFillGithub className='connection github' size="4rem"></AiFillGithub>
+                    <AiFillGithub className='connection github' size={50}></AiFillGithub>
                   </a>
                   <a className="a-linkedin" href="https://nz.linkedin.com/">
-                    <AiFillLinkedin className='connection linkedin' size="4rem"></AiFillLinkedin>
+                    <AiFillLinkedin className='connection linkedin' size={50}></AiFillLinkedin>
                   </a>
                 </div>
               </div>
@@ -91,10 +91,10 @@ const Third = () => {
                 </div>
                 <div className='connections'>
                   <a className="a-github" href="https://github.com/">
-                    <AiFillGithub className='connection github' size="4rem"></AiFillGithub>
+                    <AiFillGithub className='connection github' size={50}></AiFillGithub>
                   </a>
                   <a className="a-linkedin" href="https://nz.linkedin.com/">
-                    <AiFillLinkedin className='connection linkedin' size="4rem"></AiFillLinkedin>
+                    <AiFillLinkedin className='connection linkedin' size={50}></AiFillLinkedin>
                   </a>
                 </div>
               </div>
@@ -114,10 +114,10 @@ const Third = () => {
                 </div>
                 <div className='connections'>
                   <a className="a-github" href="https://github.com/">
-                    <AiFillGithub className='connection github' size="4rem"></AiFillGithub>
+                    <AiFillGithub className='connection github' size={50}></AiFillGithub>
                   </a>
                   <a className="a-linkedin" href="https://nz.linkedin.com/">
-                    <AiFillLinkedin className='connection linkedin' size="4rem"></AiFillLinkedin>
+                    <AiFillLinkedin className='connection linkedin' size={50}></AiFillLinkedin>
                   </a>
                 </div>
               </div>

@@ -41,15 +41,15 @@ const Navbar = () => {
                 </a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page5' ? 'active' : ''}`} id="#page5">
-                <a href="#page5">
-                    <BsFilePost />
+            <div className={`navbar-icons ${currentAnchor === 'page5' ? 'active' : ''}`} id="#page6">
+                <a href="#page6">
+                    <HiDocumentCheck />
                 </a>
             </div>
 
-            <div className={`navbar-icons ${currentAnchor === 'page6' ? 'active' : ''}`} id="#page6">
-                <a href="#page6">
-                    <HiDocumentCheck />
+            <div className={`navbar-icons ${currentAnchor === 'page6' ? 'active' : ''}`} id="#page5">
+                <a href="#page5">
+                    <BsFilePost />
                 </a>
             </div>
 

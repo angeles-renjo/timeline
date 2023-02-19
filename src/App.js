@@ -22,7 +22,7 @@ const App = () => (
       <ReactFullpage
         navigation={true}
         sectionsColor={["#111111", "#333333", "#555555", "#111111", "#333333", "#555555", "#111111", "#333333", "#555555"]}
-        navigationTooltips={['Home', 'The Team', 'LogBooks', 'MeetingMinutes', 'Poster', 'ProjectProposal', 'MidProjectProposal', 'ClientFeedBack', 'Other Documents']}
+        navigationTooltips={['Home', 'The Team', 'LogBooks', 'MeetingMinutes', 'ProjectProposal', 'Poster', 'MidProjectProposal', 'ClientFeedBack', 'Other Documents']}
         showActiveTooltip={true}
         onLeave={(origin, destination, direction) => {
           console.log("onLeave event", { origin, destination, direction });
@@ -36,8 +36,8 @@ const App = () => (
               <Team />
               <LogBook />
               <Meetings />
-              <Poster />
               <ProjectProposal />
+              <Poster />
               <MidProject />
               <ClientFeedBack />
               <Documents />

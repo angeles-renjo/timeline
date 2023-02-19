@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { BsFileEarmarkWord } from 'react-icons/bs'
 
-
 const LogBook = () => {
 
     useEffect(() => {
@@ -25,9 +24,10 @@ const LogBook = () => {
 
     return (
         <div className='section' data-anchor='page3'>
-            <div className='logbook-title'>Log Books</div>
+            <div className='logbook-header-container'>
+                <div className='logbook-title'>Log Books</div>
+            </div>
             <div className='logbook-wrapper'>
-
                 <div className='fade-left'>
                     <div className='logbook-contents'>
                         <div className='logbook-row'>

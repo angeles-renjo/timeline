@@ -1,16 +1,16 @@
 @font-face {
   font-family: proximaBold;
-  src: url(../public/assets/fonts/Fontspring-DEMO-proximanova-black.otf)
+  src: url(../public/assets/fonts/Fontspring-DEMO-proximanova-black.otf);
 }
 
 @font-face {
   font-family: proximaRegular;
-  src: url(../public/assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf)
+  src: url(../public/assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf);
 }
 
 @font-face {
   font-family: proximaLight;
-  src: url(../public/assets/fonts/Fontspring-DEMO-proximanovacond-light.otf)
+  src: url(../public/assets/fonts/Fontspring-DEMO-proximanovacond-light.otf);
 }
 
 body {
@@ -22,7 +22,7 @@ h3 {
   text-align: center;
   color: #fff;
   font-weight: 700;
-  font-family: 'proximaBold', sans-serif;
+  font-family: "proximaBold", sans-serif;
 }
 
 h4 {
@@ -36,31 +36,25 @@ h4 {
 }
 
 h1 {
-  font-family: 'proximaBold'
+  font-family: "proximaBold";
 }
 
 .section {
   height: 100vh;
 }
 
-
 .fp-watermark {
-
   display: none !important;
-
 }
 
-.fp-watermark>a {
-
+.fp-watermark > a {
   display: none !important;
-
 }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
 }
-
 
 .title {
   position: absolute;
@@ -101,9 +95,7 @@ h1 {
   font-size: 40px;
 }
 
-
 /*NavBar */
-
 
 .navbar {
   width: 25%;
@@ -139,15 +131,10 @@ h1 {
   transition: transform 0.3s ease-in-out;
 }
 
-
 .navbar-icons a:visited {
   color: whitesmoke !important;
   /* set the color of the icons to black even when visited */
 }
-
-
-
-
 
 /*TEAM */
 
@@ -156,14 +143,10 @@ h1 {
   transition: all 300ms ease-in-out;
 }
 
-
-
 .column:hover {
   transform: scale(1.3);
   transform-origin: center;
-
 }
-
 
 /* Medium screens */
 @media screen and (max-width: 768px) {
@@ -202,7 +185,6 @@ h1 {
     height: auto;
     /* adjust the height to fit the screen */
     box-sizing: border-box;
-
   }
 }
 
@@ -263,15 +245,12 @@ h1 {
     margin-bottom: 20px;
     box-sizing: border-box;
     min-width: 300p;
-
   }
 }
 
 .team-wrapper {
   height: 90vh;
 }
-
-
 
 .image-container img {
   clip-path: circle();
@@ -302,8 +281,6 @@ h1 {
 .h2 {
   color: black;
 }
-
-
 
 .connections {
   justify-content: center;
@@ -346,7 +323,6 @@ h1 {
   letter-spacing: 0.1in;
   font-size: 1rem;
 }
-
 
 .fade-left {
   -webkit-animation: fade-left 2.2s both;
@@ -590,7 +566,6 @@ h1 {
   }
 }
 
-
 /*LogBook*/
 
 .logbook-title {
@@ -614,6 +589,7 @@ h1 {
   width: 100%;
   flex-direction: column;
   margin-top: 200px;
+
 }
 
 .logbook-row {
@@ -625,11 +601,17 @@ h1 {
   align-items: center;
   margin-bottom: 80px;
   padding-right: 40px;
+
+}
+
+.logbook-icon{
+  color: skyblue !important;
 }
 
 .logbook-icon:hover {
   transform: scale(1.2);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
+  color: skyblue !important;
 }
 
 .logbook-name {
@@ -660,7 +642,6 @@ h1 {
   font-family: proximaLight;
 }
 
-
 #image-track {
   display: flex;
   gap: 4vmin;
@@ -685,7 +666,7 @@ h1 {
   /* -- Prevent image highlighting -- */
 }
 
-#image-track>.image {
+#image-track > .image {
   width: 40vmin;
   height: 56vmin;
   object-fit: cover;
@@ -694,7 +675,7 @@ h1 {
 
 /* -- YouTube Link Styles -- */
 
-body.menu-toggled>.meta-link>span {
+body.menu-toggled > .meta-link > span {
   color: rgb(30, 30, 30);
 }
 
@@ -702,11 +683,11 @@ body.menu-toggled>.meta-link>span {
   bottom: 60px;
 }
 
-#source-link>i {
+#source-link > i {
   color: rgb(94, 106, 210);
 }
 
-#yt-link>i {
+#yt-link > i {
   color: rgb(239, 83, 80);
 }
 
@@ -734,21 +715,17 @@ body.menu-toggled>.meta-link>span {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.meta-link>i,
-.meta-link>span {
+.meta-link > i,
+.meta-link > span {
   height: 20px;
   line-height: 20px;
 }
 
-.meta-link>span {
+.meta-link > span {
   color: white;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
-
-
-
-
 
 /*Poster*/
 
@@ -763,3 +740,37 @@ body.menu-toggled>.meta-link>span {
   color: white;
   margin-top: 100px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation-name: drop-in;
+  animation-duration: 1s;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vh;
+  height: 30vh;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 10%;
+  margin-right: 50px;
+}
+
+.proposal-icon {
+  text-decoration: none;
+  color: red !important;
+}
+
+.proposal-icon p {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+
